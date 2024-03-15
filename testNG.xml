@@ -1,0 +1,18 @@
+<suite name = "iBanking WebApplication Test">
+	
+	<listeners>
+		<listener class-name ="com.iNetBanking.Util.ExtentReporter"/>
+		<listener class-name = "com.iNetBanking.Util.TestListener"/>
+	</listeners>
+	
+	<test name = "iBanking LoginPage Test">
+	@Optional<parameter name ="browser" value="chrome"/>
+	<classes>
+			<class name = "com.inetBanking.TestCases.TC_LoginTest_001"/>
+			<class name = "com.inetBanking.TestCases.TC_LoginTestDDT_002"/>
+		</classes>
+		
+	</test>
+	
+	
+</suite>
